@@ -1,6 +1,6 @@
 # Computer World
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://thriving-platypus-82d629.netlify.app/).
 
 ## Available Scripts
 
