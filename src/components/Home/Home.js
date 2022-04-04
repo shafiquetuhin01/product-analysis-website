@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import image from "../../images/laptop.jpg";
 const Home = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch("review.json")
+      .then((res) => res.json())
+      .then((data) => setReviews(data.slice(0, 3)));
+  }, []);
   return (
     <div>
       <div className="home-container">
@@ -31,41 +37,19 @@ const Home = () => {
           </div>
         </div>
         <div className="customer-reviews mt-5">
-          <h2 className="mb-5 display-5 fw-bold text-center">
-            Customer Reviews
-          </h2>
-          <div className="review-items">
-            <div className="review text-left">
-              <h5>User: Abdul Basit</h5>
-              <p>This is an awesome laptop ever I have used.</p>
-              <h6>Ratings: 5</h6>
-            </div>
-            <div className="review text-left">
-              <h5>User: Mr.Henkin</h5>
-              <p>This laptop is really remarkable.</p>
-              <h6>Ratings: 5</h6>
-            </div>
-            <div className="review text-left">
-              <h5>User: Arnold Memphil</h5>
-              <p>Super fast but understanding not easy.</p>
-              <h6>Ratings: 4.5</h6>
-            </div>
-            <div className="review text-left">
-              <h5>User: Kawshik Armania</h5>
-              <p>I like it for my personal use.</p>
-              <h6>Ratings: 4.9</h6>
-            </div>
-            <div className="review text-left">
-              <h5>User: Robinson Gull</h5>
-              <p>I am searching for this type of product from a long time</p>
-              <h6>Ratings: 5</h6>
-            </div>
-            <div className="review text-left">
-              <h5>User: Mr Monowar</h5>
-              <p>Amezing Product ever I used.</p>
-              <h6>Ratings: 5</h6>
+          <div>
+            <h2 className="text-center mt-3 mb-5">Customers Review</h2>
+            <div className="review-grid">
+              {reviews.map((review) => (
+                <div className="grid-style">
+                  <h4>{review.name}</h4>
+                  <h6>{review.body}</h6>
+                  <p className="fw-bold">Ratings: {review.ratings}***</p>
+                </div>
+              ))}
             </div>
           </div>
+          <div className="review-items"></div>
           <h3 className="text-center">
             <button className="btn btn-info btn-lg fw-bold mt-5">
               See All Reviews

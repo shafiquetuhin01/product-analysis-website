@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Mr. Adam Hye",
+    "body": "This is an awesome laptop ever I have used.",
+    "ratings": "5"
+  },
+  {
+    "id": 2,
+    "name": "Mr. Gillon Tony",
+    "body": "This is an exellent product.",
+    "ratings": "5"
+  },
+  {
+    "id": 3,
+    "name": "Mr. Ishuju Kial",
+    "body": "Nice product but not easy to use.",
+    "ratings": "4.5"
+  },
+  {
+    "id": 4,
+    "name": "Quardina Allan",
+    "body": "I am satisfied with this product.",
+    "ratings": "4.9"
+  },
+  {
+    "id": 5,
+    "name": "Akash Chopra",
+    "body": "This is an awesome laptop ever I have used.",
+    "ratings": "5"
+  },
+  {
+    "id": 6,
+    "name": "Ahmed Sagir",
+    "body": "Nice product but too costly.",
+    "ratings": "4.8"
+  },
+  {
+    "id": 7,
+    "name": "Moushomi Halder",
+    "body": "Awesome Product.",
+    "ratings": "5"
+  },
+  {
+    "id": 8,
+    "name": "Liakat Ali",
+    "body": "I suggest it to buy.",
+    "ratings": "5"
+  }
+]

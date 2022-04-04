@@ -7,7 +7,7 @@ const Header = () => {
     <div>
       <nav className="d-flex p-3 items-center justify-content-center nav-link">
         <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/review">Reviews</CustomLink>
+        <CustomLink to="/reviews">Reviews</CustomLink>
         <CustomLink to="/dashboard">Dashboard</CustomLink>
         <CustomLink to="/blogs">Blogs</CustomLink>
         <CustomLink to="/about">About</CustomLink>
