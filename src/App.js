@@ -9,6 +9,7 @@ import Blogs from "./components/Blogs/Blogs";
 import About from "./components/About/About";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Reviews from "./components/Reviews/Reviews";
+import Items from "./components/Items/Items";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="/items" element={<Items></Items>}></Route>
         <Route path="*" element={<NoMatch></NoMatch>}></Route>
       </Routes>
     </div>

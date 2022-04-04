@@ -9,4 +9,4 @@ const CustomHooks = () => {
   }, []);
   return [items, setItems];
 };
-export default CustomHooks();
+export default CustomHooks;

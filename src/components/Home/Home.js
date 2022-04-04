@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import image from "../../images/laptop.jpg";
+import CustomHooks from "../../hooks/CustomHooks";
+import Items from "../Items/Items";
 const Home = () => {
+  const [items, setItems] = CustomHooks();
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
     fetch("review.json")
@@ -57,7 +60,11 @@ const Home = () => {
           </h3>
         </div>
       </div>
-      <div className="items-container"></div>
+      <div className="items-container">
+        {items.map((item) => (
+          <Items key={item.id} item={item}></Items>
+        ))}
+      </div>
     </div>
   );
 };
