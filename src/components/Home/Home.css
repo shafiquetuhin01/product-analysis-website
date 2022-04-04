@@ -8,3 +8,17 @@
     height: 400px;
     border-radius: 20px;
 }
+/* review section  */
+.review-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.review-items p{
+    line-height: 1rem;
+}
+.review{
+    border: 1px solid lightgrey;
+    padding: 10px;
+    border-radius: 8px;
+}
