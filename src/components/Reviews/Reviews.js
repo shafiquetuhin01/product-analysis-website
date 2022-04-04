@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Home from "../Home/Home";
 import "./Reviews.css";
 
 const Reviews = () => {
