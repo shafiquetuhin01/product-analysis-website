@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# Computer World
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+- Only hard work can give you to become a web developer.
+- "Practice and practice" this word is the milestone for becoming a web developer.
+- In my eyes Programming Hero is the best institute for pulling you to make a web developer.
+- This milestome gave me a lot of experience than previous.
 
 In the project directory, you can run:
 
